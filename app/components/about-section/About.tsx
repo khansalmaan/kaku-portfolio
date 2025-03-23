@@ -62,7 +62,7 @@ export default function About() {
               Design Tools
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              Figma, FigJam, UX Research, UI Design, Prototyping.
+              Figma, Adobe XD, Illustrator, Photoshop
             </AnimatedBody>
           </div>
 
@@ -72,10 +72,12 @@ export default function About() {
               charSpace={"mr-[0.001em]"}
               className="font-bold antialiased text-xl md:text-2xl mb-2"
             >
-              AI Tools
+              AI Driven Tools
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              ChatGPT, Midjourney, DALL·E, Adobe Sensei, Uizard.
+              Uizard (AI for UI design), Fotor (AI-based design editing),
+              ChatGPT/Perplexity (for brainstorming & ideation), Copy.ai
+              (Content generation)
             </AnimatedBody>
           </div>
         </div>
