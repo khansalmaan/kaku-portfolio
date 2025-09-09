@@ -14,7 +14,7 @@ const TimelineData = [
     duration: "Aug 2022 - Present",
     stuffIDid: [
       "Worked on game designs, creating immersive, user-centric interfaces.",
-      "Redesigned the Totaliry website with a focus on responsive UI, improving user experience across devices.",
+      "Redesigned the Totality website with a focus on responsive UI, improving user experience across devices.",
       "Collaborated closely with Tech Team, Project Managers, and the CTO to ensure design alignment with business goals and technical feasibility.",
       "Upskilled with AI tools in design, incorporating cutting-edge technology into my workflow.",
       "Contributed to the development of an AI image creator app, focusing on intuitive UX for creative users.",

@@ -14,8 +14,8 @@ export default function Header() {
   return (
     <>
       <div className="fixed max-w-[90%] xl:max-w-[1223px] w-full z-10 select-none">
-        <div className="flex justify-between items-center px-6 py-4 rounded-2xl bg-linear-to-r from-[#d9d9d91f] to-[#7373731f] mt-4 sm:mt-8 std-backdrop-blur">
-          <Image
+      <div className="flex justify-between items-center px-6 py-4 rounded-2xl bg-[#0C2D49] mt-4 sm:mt-5">
+      <Image
             src="/ade-logo.svg"
             width={32}
             height={36}
@@ -28,7 +28,7 @@ export default function Header() {
             icon={`${menuOpen ? "gg:close" : "lucide:menu"}`}
           />
 
-          <ul className="hidden sm:flex gap-8 lg:gap-12 text-white/25">
+          <ul className="hidden sm:flex gap-18 lg:gap-12 text-white/25">
             <Link
               href="#home"
               className={`${sectionInView === "home" && "text-white"} `}

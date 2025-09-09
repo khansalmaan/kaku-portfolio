@@ -19,9 +19,19 @@ export default function Works() {
         "https://www.behance.net/gallery/98173325/Kiosk-Ordering-System-Flow",
       about:
         "Designed a streamlined kiosk ordering system for a Kenya-based client, focused on enhancing the overall customer experience. The system’s interface is built to be intuitive and effortless, ensuring quick, seamless interactions that improve efficiency and satisfaction for both customers and staff",
-      stack: ["Figma", "Adobe XD", "Adobe Illustrator"],
+      stack: ["Figma"],
       img: "/Kiosk.png",
     },
+    // {
+    //   title: "AI Agents For All Your Finance",
+    //   // gitLink: "https://github.com/adex-hub/url-shortening-api-landing",
+    //   liveLink:
+    //     "https://www.swiftalpha.ai/",
+    //   about:
+    //     "Swift Alpha builds intelligent AI agents to guide you through every step of your financial journey. From real-time market insights to personalized news alerts, our tools empower you to invest smarter, stay informed, and always stay ahead.",
+    //   stack: ["Figma"],
+    //   img: "/SA.png",
+    // },
     {
       title: "Landing Page UI - Boomsocial ",
       // gitLink: "https://github.com/adex-hub/url-shortening-api-landing",
@@ -29,7 +39,7 @@ export default function Works() {
         "https://www.behance.net/gallery/147051161/LANDING-PAGE-UI-BOOMSOCIAL",
       about:
         "An all-in-one social media management platform's landing page, with a strong focus on user experience. The design thoughtfully guides users through their journey—helping them discover the platform, connect with their challenges, and find the ideal solution, all in an intuitive and seamless flow.",
-      stack: ["Figma", "Adobe XD", "Adobe Illustrator"],
+      stack: ["Figma"],
       img: "/Boomsocial.png",
     },
     {
@@ -38,7 +48,7 @@ export default function Works() {
       liveLink: "https://www.behance.net/gallery/147050437/Product-Case-Study",
       about:
         "A case study showcasing how Netsmartz, New York-based software development company, optimized Microtech Operations, streamlining processes and boosting productivity. The design highlights key outcomes in a clear, engaging, and user-friendly layout.",
-      stack: ["Figma", "Adobe XD", "Adobe Illustrator"],
+      stack: ["Figma"],
       img: "/Netsmartz.png",
     },
   ];
@@ -58,7 +68,7 @@ export default function Works() {
       ref={ref}
       id="work"
     >
-      <Title>Projects</Title>
+      <Title>What I’ve Been Crafting</Title>
       {works.map((work, index) => (
         <FolioCard
           key={index}

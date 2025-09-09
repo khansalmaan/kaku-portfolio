@@ -81,7 +81,7 @@ export default function Hero() {
             className="col-span-3"
           >
             <Image
-              src="/hand-wave.svg"
+              src="/hand-wavee.png"
               width={30}
               height={30}
               alt="hand-waving"
@@ -105,8 +105,7 @@ export default function Hero() {
           animate={animateIn2}
           className="text-white/40  text-xl smm:text-2xl lg:text-3xl xl:text-4xl mt-3 smm:mt-6 "
         >
-          currently focused on creating innovative designs that elevate user
-          experiences and solve real problems.
+          I design experiences that turn ‘this is confusing’ into ‘wow, that was easy.’
         </motion.p>
       </div>
 
@@ -118,14 +117,15 @@ export default function Hero() {
           className="h-image flex items-center w-[310px] h-[380px] xl:w-[390px] xl:h-[470px] justify-center relative"
           initial={{ opacity: 0 }}
           animate={animateIn1}
+  
         >
           <Image
             src="/hero-img.png"
-            width={390}
+            width={460}
             height={470}
             priority
             alt="Asmu's picture"
-            className="bg-image-radial px-10 pt-20 pb-20"
+            className="bg-image-radial px-1 pt-20 pb-20"
           />
         </motion.div>
       </div>
