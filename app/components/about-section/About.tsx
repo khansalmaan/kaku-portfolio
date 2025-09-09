@@ -25,7 +25,7 @@ export default function About() {
       <AnimatedTitle
         wordSpace={"mr-[14px]"}
         charSpace={"mr-[0.001em]"}
-        className={`uppercase ${syne.className} antialiased text-4xl md:text-5xl xl:text-6xl font-bold opacity-80`}
+        className={`${syne.className} antialiased text-4xl md:text-5xl xl:text-6xl font-bold opacity-80`}
       >
         I Craft Meaningful Digital Experiences that Drive Business Growth
       </AnimatedTitle>
