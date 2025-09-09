@@ -64,7 +64,11 @@ export default function Contact() {
               View My Resume
             </AnimatedTitle>
           </div>
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://drive.google.com/file/d/1uwDJFn67CheB85gMd7nSRmNH4jY8Wul-/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button
               className={`text-base ml-auto mt-6 lg:ml-0 block sm:hidden lg:block lg:text-2xl font-semibold px-4 py-2 md:px-3 lg:py-4 lg:mt-12 rounded-xl border-2 border-white leading-none ${
                 viewCount <= 1 && "duration-500 delay-[1500ms]"
