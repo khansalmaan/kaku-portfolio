@@ -47,48 +47,10 @@ export default function Contact() {
 
   return (
     <>
-      {/* Resume Section */}
-      <section
-        id="resume"
-        className={`overflow-y-hidden card mt-12 sm:mt-16 md:mt-[100px] px-6 pb-4 md:pb-10 lg:pb-12 flex flex-col lg:items-center lg:flex-row justify-between rounded-2xl bg-linear-to-r from-[#d9d9d91f] to-[#7373731f]`}
-      >
-        <div
-          className={` ${syne.className} flex justify-between items-center w-full duration-1000`}
-        >
-          <div className="inline w-full">
-            <AnimatedTitle
-              wordSpace={"mr-2 md:mr-[12px]"}
-              charSpace={"mr-[0.001em]"}
-              className="text-xl sm:text-2xl md:text-[32px] lg:text-[40px] font-bold pt-4 md:pt-10 lg:pt-12 "
-            >
-              View My Resume
-            </AnimatedTitle>
-          </div>
-          <a
-            href="https://drive.google.com/file/d/1uwDJFn67CheB85gMd7nSRmNH4jY8Wul-/view?usp=drive_link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button
-              className={`text-base ml-auto mt-6 lg:ml-0 block sm:hidden lg:block lg:text-2xl font-semibold px-4 py-2 md:px-3 lg:py-4 lg:mt-12 rounded-xl border-2 border-white leading-none ${
-                viewCount <= 1 && "duration-500 delay-[1500ms]"
-              } ${
-                inView
-                  ? " opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-16"
-              }`}
-              data-blobity-radius="12"
-            >
-              RESUME
-            </button>
-          </a>
-        </div>
-      </section>
-
       <section
         ref={ref}
         id="contact"
-        className={`overflow-y-hidden card mt-12 sm:mt-16 md:mt-[100px] px-6 pb-4 md:pb-10 lg:pb-12 flex flex-col lg:items-center lg:flex-row justify-between rounded-2xl bg-linear-to-r from-[#d9d9d91f] to-[#7373731f]`}
+        className={`overflow-y-hidden card mt-6 sm:mt-8 md:mt-[50px] px-10 md:px-16 lg:px-24 pb-4 md:pb-10 lg:pb-12 flex flex-col lg:items-center lg:flex-row justify-between rounded-2xl bg-linear-to-r from-[#d9d9d91f] to-[#7373731f]`}
       >
         <div
           className={` ${syne.className} flex justify-between items-center w-full duration-1000`}
@@ -124,6 +86,44 @@ export default function Contact() {
           >
             CONTACT&nbsp;ME
           </button>
+        </div>
+      </section>
+
+      {/* Resume Section */}
+      <section
+        id="resume"
+        className={`overflow-y-hidden card mt-6 sm:mt-8 md:mt-[50px] px-10 md:px-16 lg:px-24 pb-4 md:pb-10 lg:pb-12 flex flex-col lg:items-center lg:flex-row justify-between rounded-2xl bg-linear-to-r from-[#d9d9d91f] to-[#7373731f]`}
+      >
+        <div
+          className={` ${syne.className} flex justify-between items-center w-full duration-1000`}
+        >
+          <div className="inline w-full">
+            <AnimatedTitle
+              wordSpace={"mr-2 md:mr-[12px]"}
+              charSpace={"mr-[0.001em]"}
+              className="text-xl sm:text-2xl md:text-[32px] lg:text-[40px] font-bold pt-4 md:pt-10 lg:pt-12 "
+            >
+              View My Resume
+            </AnimatedTitle>
+          </div>
+          <a
+            href="https://drive.google.com/file/d/1uwDJFn67CheB85gMd7nSRmNH4jY8Wul-/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              className={`text-base ml-auto mt-6 lg:ml-0 block sm:hidden lg:block lg:text-2xl font-semibold px-4 py-2 md:px-3 lg:py-4 lg:mt-12 rounded-xl border-2 border-white leading-none ${
+                viewCount <= 1 && "duration-500 delay-[1500ms]"
+              } ${
+                inView
+                  ? " opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-16"
+              }`}
+              data-blobity-radius="12"
+            >
+              OPEN&nbsp;LINK
+            </button>
+          </a>
         </div>
       </section>
 

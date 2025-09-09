@@ -53,6 +53,12 @@ export default function Header() {
             >
               Contact
             </Link>
+            <Link
+              href="#resume"
+              className={`${sectionInView === "resume" && "text-white"} `}
+            >
+              Resume
+            </Link>
           </ul>
           <div className="gap-5 text-xl hidden sm:flex">
             <Link
