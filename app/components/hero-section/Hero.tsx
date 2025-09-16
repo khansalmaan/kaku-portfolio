@@ -115,7 +115,7 @@ export default function Hero() {
           className="inline-block mt-12"
         >
           <button
-            className="bg-[#3C84C7] text-white font-bold rounded-2xl px-10 py-5 text-2xl shadow-xl hover:bg-[#548FBA] transition-colors duration-200"
+            className="bg-[#3C84C7] text-white font-bold rounded-xl px-8 py-4 text-xl shadow-lg hover:bg-[#548FBA] transition-colors duration-200"
           >
             View Resume
           </button>
