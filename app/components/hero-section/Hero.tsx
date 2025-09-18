@@ -108,18 +108,21 @@ export default function Hero() {
           I design experiences that turn ‘this is confusing’ into ‘wow, that was easy.’
         </motion.p>
 
-        <a
+        <motion.a
           href="https://drive.google.com/file/d/1uwDJFn67CheB85gMd7nSRmNH4jY8Wul-/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block mt-12"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 2.3, duration: 0.7, ease: 'easeOut' }}
         >
           <button
             className="bg-[#3C84C7] text-white font-bold rounded-xl px-8 py-4 text-xl shadow-lg hover:bg-[#548FBA] transition-colors duration-200"
           >
             View Resume
           </button>
-        </a>
+        </motion.a>
       </div>
 
       {/* IMAGE */}
