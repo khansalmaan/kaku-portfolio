@@ -16,6 +16,7 @@ export default function FolioCard({
   liveLink,
   about,
   stack,
+  mobileLiveLink,
 }: {
   img: string;
   title: string;
@@ -23,7 +24,20 @@ export default function FolioCard({
   liveLink: string;
   about: string;
   stack: string[];
+  mobileLiveLink?: string;
 }) {
+
+  const [isMobile, setIsMobile] = React.useState(false);
+  
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const { ref, inView } = useInView({
     threshold: 0.3,
     rootMargin: "-100px 0px",
@@ -39,10 +53,11 @@ export default function FolioCard({
     >
       <Image
         src={img}
-        width={420}
-        height={700}
+        width={700}
+        height={420}
         alt="work"
-        className="rounded-[20px] w-full lg:col-span-5"
+        className="rounded-[20px] w-full lg:col-span-5 object-cover"
+        style={{ width: "30rem", height: "17rem" }}
       />
       <div className="flex flex-col gap-4 lg:col-span-7">
         <div className="flex items-center justify-between">
@@ -51,7 +66,7 @@ export default function FolioCard({
           </h2>
           <div className="flex gap-3 md:gap-4 text-2xl sm:text-3xl xl:text-4xl">
             <Link
-              href={liveLink}
+              href={ isMobile && mobileLiveLink ? mobileLiveLink : liveLink}
               className="rounded-full bg-icon-radial p-3 hover:bg-red"
               target="_blank"
               aria-label="View Github Repo"
