@@ -22,7 +22,7 @@ export default function Works() {
       stack: ["Figma"],
       img: "/IDP.png",
       mobileLiveLink:
-        "",
+        "https://www.figma.com/proto/Uzwp8BX00NcIJepqByrRYU/Project-1?node-id=248-178&t=E4rNR8mQ6q3OOmFu-1&scaling=min-zoom&content-scaling=fixed&page-id=165%3A9025&starting-point-node-id=248%3A178",
     },
     {
       title: "Kiosk Ordering System for Food",
@@ -56,6 +56,8 @@ export default function Works() {
         "A case study showcasing how Netsmartz, New York-based software development company, optimized Microtech Operations, streamlining processes and boosting productivity. The design highlights key outcomes in a clear, engaging, and user-friendly layout.",
       stack: ["Figma"],
       img: "/Netsmartz.png",
+      mobileLiveLink:
+        "https://www.behance.net/gallery/147050437/Product-Case-Study",
     },
   ];
 
